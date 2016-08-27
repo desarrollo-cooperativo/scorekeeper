@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/player_name"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/module_10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/player_dialog_hint_name"
+        android:inputType="text"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:textAllCaps="true"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textStyle="bold"/>
+</LinearLayout>

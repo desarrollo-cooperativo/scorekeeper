@@ -1,0 +1,109 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration.getAt("androidCompileSdkVersion")
+    buildToolsVersion globalConfiguration.getAt("androidBuildToolsVersion")
+
+    defaultConfig {
+        minSdkVersion globalConfiguration.getAt("androidMinSdkVersion")
+        targetSdkVersion globalConfiguration.getAt("androidTargetSdkVersion")
+
+        applicationId globalConfiguration.getAt("androidApplicationId")
+        versionCode globalConfiguration.getAt("androidVersionCode")
+        versionName globalConfiguration.getAt("androidVersionName")
+        testInstrumentationRunner globalConfiguration.getAt("testInstrumentationRunner")
+        testApplicationId globalConfiguration.getAt("testApplicationId")
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        debug {
+            if (System.getenv()["CI"]) { // CI=true is exported by Greenhouse
+                storeFile file(System.getenv()["SCOREKEEPER_DEBUG_KEYSTORE_LOCATION"])
+            } else {
+                storeFile file(SCOREKEEPER_DEBUG_KEYSTORE_LOCATION)
+            }
+        }
+
+        release {
+            if (System.getenv()["CI"]) { // CI=true is exported by Greenhouse
+                storeFile file(System.getenv()["SCOREKEEPER_RELEASE_KEYSTORE_LOCATION"])
+                storePassword System.getenv()["SCOREKEEPER_KEYSTORE_PASSWORD"]
+                keyAlias System.getenv()["SCOREKEEPER_KEY_ALIAS"]
+                keyPassword System.getenv()["SCOREKEEPER_KEY_PASSWORD"]
+            } else {
+                storeFile file(SCOREKEEPER_RELEASE_KEYSTORE_LOCATION)
+                storePassword SCOREKEEPER_KEYSTORE_PASSWORD
+                keyAlias SCOREKEEPER_KEY_ALIAS
+                keyPassword SCOREKEEPER_KEY_PASSWORD
+            }
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+        }
+
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    def mobileDependencies = rootProject.ext.mobileDependencies
+    apt mobileDependencies.daggerCompiler
+    provided mobileDependencies.javaxAnnotation
+    compile mobileDependencies.rxJava
+    compile mobileDependencies.rxAndroid
+    compile mobileDependencies.dagger
+    compile mobileDependencies.appcompat
+    compile mobileDependencies.cardview
+    compile mobileDependencies.playServices
+    compile mobileDependencies.design
+    compile mobileDependencies.butterKnife
+    compile mobileDependencies.multidex
+    compile mobileDependencies.commonsLang
+    compile mobileDependencies.guava
+    compile mobileDependencies.firebase
+    compile mobileDependencies.firebaseCore
+    compile mobileDependencies.firebaseCrash
+    compile mobileDependencies.stetho
+
+    wearApp project(':wear')
+    compile project(path: ':common')
+    compile project(path: ':domain')
+    compile project(path: ':data')
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.2@aar') {
+        transitive = true;
+    }
+}
+
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/empty_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/empty_default_message"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"/>
+</merge>

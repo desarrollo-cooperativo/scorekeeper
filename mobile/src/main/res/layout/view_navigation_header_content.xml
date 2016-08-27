@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nav_header_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/module_10"
+        android:layout_marginRight="@dimen/module_10"
+        android:layout_marginTop="@dimen/module_20"
+        android:drawablePadding="@dimen/module_10"
+        android:drawableStart="@mipmap/ic_launcher"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+    <TextView
+        android:id="@+id/nav_header_version_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/module_10"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="end"
+        android:textAppearance="?android:textAppearanceSmall"/>
+</merge>

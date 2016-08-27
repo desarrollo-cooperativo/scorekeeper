@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.transition.scorekeeper.mobile.view.component.MatchStatusView
+        android:id="@+id/match_header_result"
+        android:layout_width="@dimen/result_width"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/module_10"
+        android:gravity="center"/>
+
+    <View
+        android:id="@+id/match_header_separator"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/match_header_result"
+        android:background="@color/separator"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/match_header_separator"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/match_header_info_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/ic_flag"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="@dimen/small_font"/>
+
+        <TextView
+            android:id="@+id/match_header_info_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/match_header_info_goal"
+            android:drawableStart="@mipmap/ic_time"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="@dimen/small_font"/>
+    </RelativeLayout>
+</merge>

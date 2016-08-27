@@ -1,0 +1,36 @@
+apply from: 'buildsystem/dependencies.gradle'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.3'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+        classpath 'com.google.gms:google-services:3.0.0'
+    }
+}
+
+allprojects {
+    ext {
+        androidApplicationId = 'com.transition.scorekeeper'
+        androidVersionCode = 100
+        androidVersionName = "1.0.0"
+        testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+        testApplicationId = 'com.transition.scorekeeper.test'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+task runDomainUnitTests(dependsOn: [':domain:test']) {
+    description 'Run unit tests for the domain layer.'
+}

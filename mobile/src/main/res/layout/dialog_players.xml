@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/players_swipe_refresh_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <com.transition.scorekeeper.mobile.view.component.common.RecyclerViewWithEmptyView
+            android:id="@+id/players_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:nestedScrollingEnabled="true"
+            android:visibility="gone"/>
+
+
+        <com.transition.scorekeeper.mobile.view.component.common.EmptyView
+            android:id="@+id/players_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/module_60"/>
+
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

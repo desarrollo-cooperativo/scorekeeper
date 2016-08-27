@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.transition.scorekeeper.mobile.view.component.MatchTeamPlayersView
+        android:id="@+id/team_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="@dimen/module_10"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_light"/>
+
+    <com.transition.scorekeeper.mobile.view.component.MatchStatusView
+        android:id="@+id/match_status"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/module_10"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+
+    <View
+        android:layout_width="@dimen/module_10"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_light"/>
+
+    <com.transition.scorekeeper.mobile.view.component.MatchTeamPlayersView
+        android:id="@+id/team_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+</LinearLayout>

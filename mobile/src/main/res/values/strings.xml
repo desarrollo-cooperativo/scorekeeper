@@ -1,0 +1,61 @@
+<resources>
+    <string name="transition_match" translatable="false">transition_match</string>
+    <string name="behavior_fab">com.transition.scorekeeper.mobile.view.component.behavior.ScrollAwareFABBehavior</string>
+    <string name="exception_message_generic">There was a error: %1$s</string>
+    <string name="empty_default_message">There are not items in this list</string>
+
+    <string name="app_name">Scorekeeper</string>
+    <string name="navigation_download">Download DB</string>
+    <string name="navigation_drawer_open">Open menu</string>
+    <string name="navigation_drawer_close">Close menu</string>
+    <string name="empty_loading_matches">Loading matches</string>
+    <string name="empty_matches">There are not matches yet.</string>
+
+    <string name="match_status_to_start">To play</string>
+    <string name="match_status_end">Finished</string>
+    <string name="match_status_result">%1$s - %2$s</string>
+    <string name="match_status_in_progress">%1$s : %2$s</string>
+
+    <string name="match_info_time">Max.time: %1$s min.</string>
+    <string name="match_info_goal">Max. score %1$s</string>
+    <string name="match_info_not_limit">Not Limit</string>
+
+    <string name="match_header_info_edit">Edit</string>
+    <string name="action_start_match">Start</string>
+    <string name="action_end_match">End</string>
+    <string name="action_send_watch">Send watch</string>
+
+    <string name="undo">Undo</string>
+
+    <string name="snack_bar_goal">%1$s, score as %2$s at %3$s</string>
+    <string name="forward">forward</string>
+    <string name="defender">defender</string>
+    <string name="duration">%1$s : %2$s</string>
+    <string name="error_adding_the_goal">There was a error in add the goal</string>
+    <string name="error_time_not_finished">The match not end yet</string>
+    <string name="empty_goals">~</string>
+
+    <string name="players_dialog_positive">New player</string>
+    <string name="players_dialog_title">Select a player</string>
+    <string name="empty_loading_players">Loading players</string>
+    <string name="empty_players">There are not players yet.</string>
+
+    <string name="tab_matches_playing">Playing</string>
+    <string name="tab_matches_played">Played</string>
+    <string name="tab_matches_to_play">To Play</string>
+
+    <string name="match_can_not_start">The match need at least %1$s teams.</string>
+
+    <string name="title_goal_info_dialog">Score Limit</string>
+    <string name="message_goal_info_dialog">Select max score that will has the match</string>
+
+    <string name="title_time_info_dialog">Time Limit</string>
+    <string name="message_time_info_dialog">Select max minutes that will has the match</string>
+
+    <string name="number_picker_dialog_positive">Apply</string>
+    <string name="number_picker_dialog_negative">Not limit</string>
+
+    <string name="player_dialog_title">Create player</string>
+    <string name="player_dialog_positive">Create</string>
+    <string name="player_dialog_hint_name">Player name</string>
+</resources>

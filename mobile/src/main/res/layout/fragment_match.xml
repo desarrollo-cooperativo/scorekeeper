@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/match_swipe_refresh_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/match_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/module_20"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/match_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:transitionName="@string/transition_match">
+
+            <com.transition.scorekeeper.mobile.view.component.MatchHeaderView
+                android:id="@+id/match_header"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"/>
+
+            <include
+                android:id="@+id/match_players"
+                layout="@layout/view_players"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/match_header"/>
+
+            <com.transition.scorekeeper.mobile.view.component.common.RecyclerViewWithEmptyView
+                android:id="@+id/match_log_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/match_players"
+                android:nestedScrollingEnabled="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/player_top"
+        style="@style/TextView.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/module_10"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:textAllCaps="true"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/players_separators"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/player_top"
+        android:background="@color/separator"/>
+
+    <TextView
+        android:id="@+id/player_bottom"
+        style="@style/TextView.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/players_separators"
+        android:layout_margin="@dimen/module_10"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:textAllCaps="true"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textStyle="bold"/>
+</merge>

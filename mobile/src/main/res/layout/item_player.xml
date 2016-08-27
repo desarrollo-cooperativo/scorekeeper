@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/player"
+    style="@style/TextView.Dark"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/module_20"
+    android:fontFamily="sans-serif-condensed"
+    android:gravity="center"
+    android:singleLine="true"
+    android:textAllCaps="true"
+    android:textAppearance="?android:textAppearanceSmall"
+    android:textStyle="bold"/>
