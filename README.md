@@ -8,7 +8,7 @@ The idea of this project was based on the proposed architecture of this blog ent
 ![alt tag](https://dl.dropboxusercontent.com/u/1927961/scorekeeper_db.png)
 
 # Application #
-Feel free to join the beta release channel of the app in the [Play Store] (https://play.google.com/apps/testing/com.transition.scorekeeper)
+Feel free to join the beta release channel of the app in the [Play Store] (http://goo.gl/Gtcefb)
 
 ## Screenshots ##
 <img src="https://dl.dropboxusercontent.com/u/1927961/scorekeeper/01.png" align="center" width="150">
