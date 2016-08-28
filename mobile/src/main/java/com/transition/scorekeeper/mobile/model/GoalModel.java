@@ -74,8 +74,7 @@ public class GoalModel implements Serializable {
         }
 
         public GoalModel build() {
-            description = context.getString(R.string.snack_bar_goal, player.getName(),
-                    playerPositionValue, goalTime);
+            description = context.getString(R.string.snack_bar_goal, player.getName(), goalTime);
             return new GoalModel(this);
         }
 

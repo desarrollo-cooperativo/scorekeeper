@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Scorekeeper</string>
+    <string name="app_name" translatable="false">Scorekeeper</string>
     <string name="empty_list">Please select a match on the phone</string>
 </resources>

@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
+import com.transition.scorekeeper.BuildConfig;
 import com.transition.scorekeeper.R;
 import com.transition.scorekeeper.mobile.ViewConstants;
 import com.transition.scorekeeper.mobile.internal.di.HasComponent;
@@ -68,6 +69,9 @@ public class MatchesActivity extends BaseActivity
     private void initializeNavigationView() {
         NavigationView navigationView = (NavigationView) findViewById(R.id.main_navigation_view);
         if (navigationView != null) {
+            if (BuildConfig.DEBUG) {
+                navigationView.getMenu().setGroupVisible(R.id.navigation_group_testing, false);
+            }
             navigationView.setNavigationItemSelectedListener(this);
         }
     }

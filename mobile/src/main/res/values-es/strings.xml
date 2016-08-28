@@ -1,0 +1,58 @@
+<resources>
+    <string name="exception_message_generic">Se produjo un error: %1$s</string>
+    <string name="empty_default_message">No hay contenido en esta lista</string>
+
+    <string name="navigation_drawer_open">Abrir el menu</string>
+    <string name="navigation_drawer_close">Cerrar el menu</string>
+    <string name="empty_loading_matches">Cargando partidos</string>
+    <string name="empty_matches">No existen partidos aún.</string>
+
+    <string name="match_status_to_start">A jugarse</string>
+    <string name="match_status_end">Finalizado</string>
+
+    <string name="match_info_time">Tiempo máximo: %1$s min.</string>
+    <string name="match_info_goal">Goles máximos: %1$s</string>
+    <string name="match_info_not_limit">Sin limite</string>
+
+    <string name="match_header_info_edit">Editar</string>
+    <string name="action_start_match">Comenzar</string>
+    <string name="action_end_match">Finalizar</string>
+    <string name="action_send_watch">Enviar al wearable</string>
+
+    <string name="undo">Deshacer</string>
+
+    <string name="snack_bar_goal">Gol de %1$s a los %2$s</string>
+    <string name="error_adding_the_goal">Se produjo un error al agregar el gol</string>
+    <string name="error_time_not_finished">El partido no termino aún</string>
+
+    <string name="players_dialog_positive">Nuevo jugador</string>
+    <string name="players_dialog_title">Seleccionar jugador</string>
+    <string name="empty_loading_players">Cargando jugadores</string>
+    <string name="empty_players">No existen jugadores aún.</string>
+
+    <string name="tab_matches_playing">Jugando</string>
+    <string name="tab_matches_played">Jugados</string>
+    <string name="tab_matches_to_play">Por jugarse</string>
+
+    <string name="match_can_not_start">El partido necesita al menos %1$s equipos.</string>
+
+    <string name="title_goal_info_dialog">Limite de goles</string>
+    <string name="message_goal_info_dialog">Seleccione la cantidad máxima de goles que tendra el
+        partido
+    </string>
+
+    <string name="title_time_info_dialog">Limite de tiempo</string>
+    <string name="message_time_info_dialog">Seleccione la cantidad máxima de minutos que tendra el
+        partido
+    </string>
+
+    <string name="number_picker_dialog_positive">Confirmar</string>
+    <string name="number_picker_dialog_negative">Sin limite</string>
+
+    <string name="player_dialog_title">Crear jugador</string>
+    <string name="player_dialog_positive">Crear</string>
+    <string name="player_dialog_hint_name">Nombre del jugador</string>
+
+    <string name="forward">Delantero</string>
+    <string name="defender">Defensor</string>
+</resources>

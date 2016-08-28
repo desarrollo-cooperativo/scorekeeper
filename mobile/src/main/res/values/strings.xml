@@ -1,11 +1,13 @@
 <resources>
     <string name="transition_match" translatable="false">transition_match</string>
-    <string name="behavior_fab">com.transition.scorekeeper.mobile.view.component.behavior.ScrollAwareFABBehavior</string>
+    <string name="behavior_fab" translatable="false">
+        com.transition.scorekeeper.mobile.view.component.behavior.ScrollAwareFABBehavior
+    </string>
     <string name="exception_message_generic">There was a error: %1$s</string>
     <string name="empty_default_message">There are not items in this list</string>
 
-    <string name="app_name">Scorekeeper</string>
-    <string name="navigation_download">Download DB</string>
+    <string name="app_name" translatable="false">Scorekeeper</string>
+    <string name="navigation_download" translatable="false">Download DB</string>
     <string name="navigation_drawer_open">Open menu</string>
     <string name="navigation_drawer_close">Close menu</string>
     <string name="empty_loading_matches">Loading matches</string>
@@ -13,8 +15,8 @@
 
     <string name="match_status_to_start">To play</string>
     <string name="match_status_end">Finished</string>
-    <string name="match_status_result">%1$s - %2$s</string>
-    <string name="match_status_in_progress">%1$s : %2$s</string>
+    <string name="match_status_result" translatable="false">%1$s - %2$s</string>
+    <string name="match_status_in_progress" translatable="false">%1$s : %2$s</string>
 
     <string name="match_info_time">Max.time: %1$s min.</string>
     <string name="match_info_goal">Max. score %1$s</string>
@@ -42,14 +44,14 @@
 
     <string name="tab_matches_playing">Playing</string>
     <string name="tab_matches_played">Played</string>
-    <string name="tab_matches_to_play">To Play</string>
+    <string name="tab_matches_to_play">To play</string>
 
     <string name="match_can_not_start">The match need at least %1$s teams.</string>
 
-    <string name="title_goal_info_dialog">Score Limit</string>
+    <string name="title_goal_info_dialog">Score limit</string>
     <string name="message_goal_info_dialog">Select max score that will has the match</string>
 
-    <string name="title_time_info_dialog">Time Limit</string>
+    <string name="title_time_info_dialog">Time limit</string>
     <string name="message_time_info_dialog">Select max minutes that will has the match</string>
 
     <string name="number_picker_dialog_positive">Apply</string>
