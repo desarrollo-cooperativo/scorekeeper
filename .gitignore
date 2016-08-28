@@ -30,3 +30,7 @@ build
 *.swp
 release.keystore
 debug.keystore
+mobile/google-services.json
+mobile/fabric.properties
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
