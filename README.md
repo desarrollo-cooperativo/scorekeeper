@@ -20,6 +20,12 @@ Feel free to join the beta release channel of the app in the [Play Store] (http:
 <img src="https://dl.dropboxusercontent.com/u/1927961/scorekeeper/07.png" align="center" width="150">
 <img src="https://dl.dropboxusercontent.com/u/1927961/scorekeeper/08.png" align="center" width="150">
 
+## How to setup ##
+For run this project on your machine you need add the follow files
+- In the root of the module mobile the file "google-services.json" obtaing this creating a project in [firebase](https://console.firebase.google.com/)
+
+- On your gradle.properties file add the follow key: SCOREKEEPER_DEBUG_KEYSTORE_LOCATION with the location of your debug key
+
 ### Contact ###
 
 * diego.rotondale@cardumen.com.ar
