@@ -49,13 +49,11 @@ android {
                 storePassword System.getenv()["SCOREKEEPER_KEYSTORE_PASSWORD"]
                 keyAlias System.getenv()["SCOREKEEPER_KEY_ALIAS"]
                 keyPassword System.getenv()["SCOREKEEPER_KEY_PASSWORD"]
-                resValue 'string', 'fabric_key', System.getenv()["SCOREKEEPER_FABRIC_KEY"]
             } else {
                 storeFile file(SCOREKEEPER_RELEASE_KEYSTORE_LOCATION)
                 storePassword SCOREKEEPER_KEYSTORE_PASSWORD
                 keyAlias SCOREKEEPER_KEY_ALIAS
                 keyPassword SCOREKEEPER_KEY_PASSWORD
-                resValue 'string', 'fabric_key', SCOREKEEPER_FABRIC_KEY
             }
         }
     }
