@@ -25,7 +25,7 @@
         </activity>
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="59843ec31246904021f24d66ead4674cbeb620f4" />
+            android:value="SCOREKEEPER_FABRIC_KEY" />
     </application>
 
 </manifest>
